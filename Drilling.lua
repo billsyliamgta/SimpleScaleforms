@@ -1,13 +1,8 @@
 local handle
-
 local speed = 0.0
-
 local depth = 0.1
-
 local pos = 0.1
-
 local temp = 0.0
-
 local visible = false
 
 function LoadScaleform()
@@ -84,4 +79,5 @@ Citizen.CreateThread(function ()
         end
         Citizen.Wait(0)
     end
+
 end)
