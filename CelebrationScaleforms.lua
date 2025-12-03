@@ -1,7 +1,5 @@
 local bg, fg, main
-
 local wallId = "CELEB_HEIST"
-
 local wallId2 = "intro"
 
 function LoadHeistCelebScaleforms()
@@ -768,4 +766,5 @@ Citizen.CreateThread(function()
 end)
 
 exports('celeb:ShowPassed', ShowPassed)
+
 exports('celeb:ShowJobIntro', ShowJobIntro)
