@@ -1,5 +1,4 @@
 local handle
-
 local useCondensed = false
 
 function LoadScaleform()
@@ -73,6 +72,7 @@ end
 function SetCondensed(value)
 useCondensed = value
 end
+
 
 exports('midsizedMessage:Show', Show)
 exports('midsizedMessage:SetCondensed', SetCondensed)
