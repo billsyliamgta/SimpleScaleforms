@@ -1,18 +1,16 @@
 local hudComponent = 19
-
 local XPStartLimit = 0
-
 local XPEndLimit = 1000
-
 local PreviousXP = 0
-
 local CurrentXP = 0
-
 local PlayerRank = 1
-
 local modifier = 0.2
-
 local enabled = true
+
+RegisterNetEvent("rankBar:Enabled")
+AddEventHandler("rankBar:Enabled", function (toggle)
+    enabled = toggle
+end)
 
 RegisterNetEvent("rankBar:SetPlayerRank")
 AddEventHandler("rankBar:SetPlayerRank", function (value)
@@ -177,4 +175,5 @@ if enabled then
         Citizen.Wait(0)
     end
     end)
+
 end
